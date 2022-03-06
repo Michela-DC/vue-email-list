@@ -10,6 +10,14 @@
 </head>
 <body>    
 
+    <div id="app">
+
+        <ul v-for="(email, i) in emailArray">
+            <li v-if="email !== undefined">{{ i+1 }} = {{email}}</li>
+        </ul>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
